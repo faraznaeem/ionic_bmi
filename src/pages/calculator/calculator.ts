@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the CalculatorPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-calculator',
@@ -29,6 +22,7 @@ export class CalculatorPage {
       this.setBMIMessage();
     }
   }
+
 private setBMIMessage() {
   if (this.bmiValue < 18.5) {
     this.bmiMessage = "You are a skinny devil"
@@ -46,9 +40,6 @@ private setBMIMessage() {
     this.bmiMessage = "Call 911 we have a whale here"
   }
 }
-
-
-
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CalculatorPage');
